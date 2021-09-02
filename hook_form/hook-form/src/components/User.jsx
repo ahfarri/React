@@ -31,14 +31,14 @@ const UserForm = (props) => {
             {lastname.length<2?
                 <p className="text-danger">Last name must be at least 2 characters.</p>:
                 ""}
-            <div className="input-group mb-3">
+            <div className="input-group mb-3">
                 <span className="input-group-text">Email Address: </span>
                 <input className="form-control" type="text" onChange={ (e) => setEmail(e.target.value) }/>
             </div>
             {email.length<5?
                 <p className="text-danger">Email must be at least 5 characters.</p>:
                 ""}
-            <div className="input-group mb-3">
+            <div className="input-group mb-3">
                 <span className="input-group-text">Password: </span>
                 <input className="form-control" type="text" onChange={ (e) => setPassword(e.target.value) }/>
             </div>
